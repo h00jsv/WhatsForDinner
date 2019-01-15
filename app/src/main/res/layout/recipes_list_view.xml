@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/recipesListView"
+    android:layout_gravity="left|center_vertical"
+    android:smoothScrollbar="true"
+    android:scrollIndicators="right"
+    android:background="@drawable/text_view_border"/>

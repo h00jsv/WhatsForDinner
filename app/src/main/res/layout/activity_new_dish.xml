@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newDish.NewDishActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="110sp"
+                    android:layout_height="110sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:maxHeight="70sp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:gravity="left">
+
+                    <Button
+                        android:id="@+id/addPictureBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Change Picture"
+                        android:textAllCaps="false"
+                        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ingredients"
+                android:textSize="18sp" />
+
+
+            <ListView
+                android:id="@+id/listView"
+                style="@style/Widget.AppCompat.ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/directions"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                style="@style/Widget.AppCompat.EditText"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                tools:background="@color/lightGray"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="269dp"
+                android:maxLength="250"/>
+
+            <Button
+                android:id="@+id/io"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:text="Save Dish"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

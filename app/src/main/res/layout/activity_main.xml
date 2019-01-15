@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView6"
+        android:onClick="newDish"
+        app:srcCompat="@drawable/sharp_add_circle_black_48" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bannerImageView"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:onClick="showMeals"
+        app:srcCompat="@drawable/sharp_calendar_today_black_48" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_marginEnd="50dp"
+        android:onClick="showRecipes"
+        app:srcCompat="@drawable/sharp_chrome_reader_mode_black_48" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginBottom="63dp"
+        android:onClick="showGroceries"
+        app:srcCompat="@drawable/sharp_local_grocery_store_black_48" />
+
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/whatsfordinner"
+        android:text="About app"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/recipesText"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView4"
+        android:text="Recipes"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/groceriesText"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
+        android:text="Groceries"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/newDishText"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:text="New Dish"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mealsText2"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_below="@+id/imageView4"
+        android:text="Meals"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AlertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bannerImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Alert received"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

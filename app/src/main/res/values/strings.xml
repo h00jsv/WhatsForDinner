@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WhatsForDinner</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="directions">Cooking directions</string>
+
+    <string name="enter_recipe_name">Enter Recipe Name</string>
+    <string name="recipes">Recipes</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="item_1">Item 1</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/primaryPurple">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryPurple"
+            android:id="@+id/cardView">
+            <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="@string/item_1"
+            android:gravity="left"
+            android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_1"
+            android:gravity="left"
+            android:textAppearance="@style/TextAppearance.Compat.Notification.Title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
