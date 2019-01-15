@@ -1,4 +1,4 @@
 # whatsForDinner
 
 
-this text is the merged text
+Android app to create customized meal plans.
